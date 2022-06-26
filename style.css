@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(209, 250, 245);
+}
+
+a {
+    text-decoration: none;
+    color:cadetblue;
+    transition: color .2s;
+}
+
+a:hover {
+    color: chocolate;
+}
+
+.container {
+    max-width: 600px;
+    margin:auto;
+    min-height: 1200px;
+}
+
+header {
+    margin-top: 20px;
+}
+
+header > img {
+    display: inline-block;
+}
+
+.about-me {
+    display: inline-block;
+    margin-left: 30px;
+    vertical-align: super;
+}
+
+.about-me-activity {
+    font-size: 20px;
+    font-style: italic;
+    line-height: 10px;
+    margin: 25px 0;
+    color: grey;
+}
+
+.about-me-social {
+    margin-bottom: 5px;
+}
+
+.avatar {
+    width: 250px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.card {
+    border-radius: 20px;
+    background-color: aliceblue; 
+    margin: 20px 0;
+}
+
+.hobbies {
+    background-color: slateblue;
+    padding: 20px;
+}
+
+.hobbies > h2 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.hobbies-list {
+    list-style: none;
+}
+
+.hobbies-list li {
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+
+.hobbies-list li:last-child {
+    margin-bottom: 0;
+}
+
+.hobbies-list li:nth-child(even) {
+    background-color: darkseagreen;
+}
+
+.hobbies-list li:nth-child(odd) {
+    background-color: aquamarine;
+}
+
+.works {
+    background-color: salmon;
+    padding: 10px;
+}
+
+.works td:nth-child(2) {
+    color: white;
+}
+
+.works td:nth-child(3) {
+    color: cyan;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 14px;
+    border-radius: 10px;
+    background-color: grey;
+    color: white;
+    font-family: inherit;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    transition: all .2s;
+    display: block;
+}
+
+.btn:hover {
+    background-color:white;
+    color: black;
+}
+
+input::placeholder, textarea::placeholder {
+    opacity: 0.8;
+    font-family: 'Nunito';
+}
+
+.form {
+    padding: 20px;
+    background-color: lightgrey;
+}
+
+.form > h2 {
+    text-align: center;
+}
+
+.form .input {
+    border: none;
+    border-bottom: 2px solid darkgrey;
+    background-color: lightgrey;
+    width: 100%;
+    padding: 2px 0 10px;
+    margin-top: 10px;
+}
+
+.div-name, .div-email {
+    display: inline-block;
+    width: 45%;
+}
+
+.div-name {
+    margin-right: 40px;
+}
+
+.div-message {
+    margin: 20px 0;
+}
+
+.div-message > textarea {
+    width: 100%;
+}
+
+.form label {
+    display: block;
+    color: darkgrey;
+    font-size: 15px;
+}
+
+@media (max-width: 650px) {
+    .avatar {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .about-me {
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+
+    .about-me-social {
+        font-size: 23px;
+    }
+
+    .about-me-links {
+        font-size: 20px;
+    }
+
+    .div-name, .div-email {
+        width: 100%;
+        margin-top: 20px;
+    }
+}

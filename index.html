@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="resume, Amir, html, css">
+    <meta name="description" content="Мое резюме">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="1.png" class="avatar" alt="avatar">
+            <div class="about-me">
+                <h1>Амир</h1>
+                <p class="about-me-activity">Прохожу <em>курс <strong>HTML & CSS</strong></em></p>
+                <p class="about-me-social"><strong>Список социальных сетей:</strong></p>
+                <p class="about-me-links"><a href="https://www.instagram.com/" target="_blank">Instagram</a> | <a href="https://telegram.me/" target="_blank">Telegram</a> | <a href="https://youtube.com/" target="_blank">Youtube</a></p>
+            </div>
+        </header>
+    
+        <div class="card hobbies">
+            <h2>Мои хобби</h2>
+            <ol class="hobbies-list">
+                <li>1. Путешествия</li>
+                <li>2. Блоггинг</li>
+                <li>3. Горные лыжи</li>
+                <li>4. MMA</li>
+            </ol>
+        </div>
+        
+        <div class="card works">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>LPTracker</td>
+                        <td>Frontend</td>
+                        <td>2015-2016</td>
+                    </tr>
+                    <tr>
+                        <td>EPAM</td>
+                        <td>Software Engineer</td>
+                        <td>2016-2017</td>
+                    </tr>
+                    <tr>
+                        <td>Software Outsourcing Services</td>
+                        <td>Senior Frontend</td>
+                        <td>2017-2019</td>
+                    </tr>
+                    <tr>
+                        <td>Youtube</td>
+                        <td>Blogger</td>
+                        <td>2019-сейчас</td>
+                    </tr>
+                    <tr>
+                        <td>Result School</td>
+                        <td>CEO</td>
+                        <td>2021-сейчас</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <div class="form card">
+            <h2>Связаться со мной</h2>
+            <form>
+                <div class="div-name">
+                    <label class="label-name" for="name">Ваше имя:</label>
+                    <input class="input" type="text" id="name" placeholder="Введите имя">
+                </div>
+                <div class="div-email">
+                    <label class="label-email" for="email">Ваш email:</label>
+                    <input class="input" type="email" id="email" placeholder="Введите email">
+                </div>
+                <div class="div-message">
+                    <label class="label-message" for="message">Ваше сообщение:</label>
+                    <textarea class="input" placeholder="Введите сообщение..." rows="5" id="message"></textarea>
+                </div>
+                <button class="btn" type="submit">Отправить!</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
